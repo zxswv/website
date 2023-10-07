@@ -32,13 +32,16 @@
 }
 p {
     width: 80%;
-    display: flex;
     margin: 16px auto;
     font-size: 1.4rem;
-}
+}/*文の設定*/
 .calendar {
     width: 100%; 
-    display: flex;
+    display: flex; /*横並び*/
     justify-content: center;
     align-items: center;
-}
+}/*画像の設定*/
+.namisen {
+    /* display: flex; */
+    text-decoration: rgb(247, 27, 27) wavy underline;
+}/*テキストの下に波線*/
