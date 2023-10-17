@@ -45,3 +45,13 @@ p {
     /* display: flex; */
     text-decoration: rgb(247, 27, 27) wavy underline;
 }/*テキストの下に波線*/
+
+#wrapper {
+    overflow: visible;
+    padding: 0;
+    width: 100%;
+}
+#wrapper {
+    margin: 0 auto;
+    position: relative;
+}
