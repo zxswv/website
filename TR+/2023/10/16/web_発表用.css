@@ -1,0 +1,63 @@
+div {
+    display: block;
+}
+p {
+    width: 80%;
+    margin: 16px auto;
+    font-size: 1.4rem;
+}/*文の設定*/
+@media only screen and (max-width: 959px) {
+    #wrapper:not(.colum1) #content-w,header+#content-w {
+        padding-top: 10px;
+    }
+}
+@media print,screen and (min-width: 960px) {
+    #st-header-post-under-box.st-header-post-data,#st-header-post-under-box.st-header-post-no-data {
+        margin:-10px 0 10px
+    }
+    #content {
+        margin: 0 auto
+    }
+}
+#content {
+    position: relative;
+}
+.clearfix {
+    zoom:1;
+}
+@media only screen and (min-width: 960px) {
+
+        /*--------------------------------
+        PCのレイアウト（右サイドバー）
+        ---------------------------------*/
+
+        #contentInner {
+            float: left;
+            width: 100%;
+            margin-right: -300px;
+        }
+
+        main {
+            margin-right: 320px;
+            margin-left: 0px;
+            background-color: #fff;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            padding: 30px 50px 30px;
+        }
+
+        #side aside {
+            float: right;
+            width: 300px;
+            padding: 0px;
+        }
+    }
+    /* 一括カラー反映 */
+	/*メインコンテンツのテキスト色*/
+	main,
+	.post > * {
+		color: #333333;
+	}
+
+

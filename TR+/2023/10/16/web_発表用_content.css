@@ -30,11 +30,6 @@
 .Sakusei-bi {
     background: white
 }
-p {
-    width: 80%;
-    margin: 16px auto;
-    font-size: 1.4rem;
-}/*文の設定*/
 .calendar {
     width: 100%; 
     display: flex; /*横並び*/
@@ -54,4 +49,32 @@ p {
 #wrapper {
     margin: 0 auto;
     position: relative;
+}
+@media only screen and (min-width: 960px) {
+	.st-content-width, /* 汎用 */
+	#st-menuwide, /*メニュー*/
+	nav.smanone,
+	nav.st5,
+	#st-header-cardlink,
+	#st-menuwide div.menu,
+	#st-menuwide nav.menu,
+	#st-header, /*ヘッダー*/
+	#st-header-under-widgets-box, /*ヘッダー画像下ウィジェット*/
+	#st-footer-under-widgets-box, /*フッター一括ウィジェット*/
+	#content, /*コンテンツ*/
+	#footer-in /*フッター*/
+	{
+		max-width:1116px;
+	}
+    #contentInner {
+        float: left;
+        width: 100%;
+        margin-right: -300px;
+    }
+    @media only screen and (min-width: 600px) {
+        /*メインコンテンツの背景色*/
+    body:not(.front-page) main {
+        background: #ffffff!important;
+    }
+    }
 }
