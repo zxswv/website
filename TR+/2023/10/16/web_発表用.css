@@ -1,3 +1,75 @@
+@charset "UTF-8";* {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue","Hiragino Kaku Gothic ProN","メイリオ",meiryo,sans-serif;
+    margin: 0;
+    padding: 0
+}
+
+main {
+    color: #333
+}
+
+.st-marquee p:empty,p:empty {
+    display: none
+}
+
+.st-notosans,.st-notosans * {
+    font-family: 'Noto Sans JP',sans-serif!important
+}
+
+.st-m1c,.st-m1c * {
+    font-family: 'M PLUS Rounded 1c',sans-serif!important
+}
+
+main,article,aside,header,canvas,details,figcaption,figure,footer,nav,section,summary {
+    display: block
+}
+
+html,body {
+    height: 100%
+}
+
+body {
+    min-width: 320px;
+    word-wrap: break-word;
+    background-color: #fff;
+    counter-reset: stcnt imgcountcnt ranknumber-h2 ranknumber-h3 ranknumber-h4
+}
+
+body.mceContentBody {
+    background-color: #fff
+}
+
+cite {
+    font-style: normal
+}
+
+.entry-content>div {
+    margin-bottom: 20px
+}
+
+.entry-content {
+    margin-bottom: 20px
+}
+
+.entry-content.st-empty {
+    margin-bottom: 0
+}
+
+.colum1 .entry-content.st-empty {
+    margin-bottom: 10px
+}
+
+.single .entry-content {
+    padding-top: 10px
+}
+
+body.is-content-empty .entry-content {
+    margin-bottom: 0
+}
+
+*>p:last-child {
+    margin-bottom: 0
+}
 div {
     display: block;
 }
@@ -6,6 +78,7 @@ p {
     margin: 16px auto;
     font-size: 1.4rem;
 }/*文の設定*/
+
 @media only screen and (max-width: 959px) {
     #wrapper:not(.colum1) #content-w,header+#content-w {
         padding-top: 10px;
@@ -52,6 +125,9 @@ p {
             width: 300px;
             padding: 0px;
         }
+        #side {
+            padding: 0
+        }
     }
     /* 一括カラー反映 */
 	/*メインコンテンツのテキスト色*/
@@ -59,5 +135,15 @@ p {
 	.post > * {
 		color: #333333;
 	}
+    #side aside>div>div {
+        margin-bottom: 10px
+    }
+    .side-widgets {
+        margin: 0
+    }
+    .side-widgets>* {
+        margin-bottom: 10px
+    }
+    
 
 
